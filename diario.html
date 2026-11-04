@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Diário de viagens · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app app--amplo">
+    <header class="pagina-topo">
+      <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+      <h1>Diário de viagens</h1>
+      <div class="pagina-topo__acoes"><button type="button" class="botao botao--primario botao--pequeno" id="novo-registro">＋ Memória</button></div>
+    </header>
+    <div class="conteudo">
+      <section aria-label="Estatísticas" id="estatisticas"></section>
+      <section aria-label="Linha do tempo" id="linha-tempo"></section>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/formulario-viagem.js"></script>
+  <script src="js/diario.js"></script>
+</body>
+</html>

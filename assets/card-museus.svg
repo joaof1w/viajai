@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480">
+  <defs>
+    <linearGradient id="ceuM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b98f3f"/><stop offset=".6" stop-color="#e8c67e"/><stop offset="1" stop-color="#f7ebd2"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#ceuM)"/>
+  <circle cx="590" cy="110" r="120" fill="#fff4dc" opacity=".35"/>
+  <g fill="#fdf8ee">
+    <path d="M360 96l248 96H112z"/>
+    <rect x="128" y="192" width="464" height="22" rx="6"/>
+    <g>
+      <rect x="164" y="222" width="40" height="150" rx="8"/>
+      <rect x="248" y="222" width="40" height="150" rx="8"/>
+      <rect x="332" y="222" width="40" height="150" rx="8"/>
+      <rect x="416" y="222" width="40" height="150" rx="8"/>
+      <rect x="500" y="222" width="40" height="150" rx="8"/>
+    </g>
+    <rect x="128" y="372" width="464" height="20" rx="6"/>
+    <rect x="106" y="392" width="508" height="18" rx="6"/>
+    <rect x="86" y="410" width="548" height="18" rx="6"/>
+  </g>
+  <g fill="#c99a4a" opacity=".55">
+    <rect x="176" y="222" width="16" height="150"/><rect x="260" y="222" width="16" height="150"/>
+    <rect x="344" y="222" width="16" height="150"/><rect x="428" y="222" width="16" height="150"/>
+    <rect x="512" y="222" width="16" height="150"/>
+  </g>
+  <path d="M0 428h720v52H0z" fill="#d9b877"/>
+  <g transform="translate(360 150)" fill="#c98a3c">
+    <circle r="20"/><path d="M-34 20l22-30 16 20 14-16 22 26z" fill="#8c5a2b"/>
+  </g>
+</svg>

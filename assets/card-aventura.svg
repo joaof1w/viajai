@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480">
+  <defs>
+    <linearGradient id="ceuA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f5f6e"/><stop offset=".6" stop-color="#5fa8a0"/><stop offset="1" stop-color="#ffd9a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#ceuA)"/>
+  <circle cx="548" cy="128" r="46" fill="#ffe6a8" opacity=".9"/>
+  <path d="M0 344l150-176 96 108 62-70 128 138H0z" fill="#1f4a3f"/>
+  <path d="M150 168l58 68h-116z" fill="#eef6f2"/>
+  <path d="M308 206l40 44h-80z" fill="#eef6f2"/>
+  <path d="M330 356l150-160 240 268H330z" fill="#2c6650"/>
+  <path d="M480 196l52 58h-104z" fill="#f3faf6"/>
+  <path d="M0 368q180-42 360 0t360-6v118H0z" fill="#173c33"/>
+  <g fill="#0f2b25">
+    <path d="M96 404l26-56 26 56z"/><path d="M104 430l18-42 18 42z"/>
+    <path d="M566 420l30-62 30 62z"/><path d="M576 448l20-46 20 46z"/>
+  </g>
+  <path d="M0 452q140-30 250-4t230-10 240 6" stroke="#e9c58a" stroke-width="10" fill="none" stroke-linecap="round" opacity=".8"/>
+</svg>

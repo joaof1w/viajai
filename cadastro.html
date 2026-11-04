@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Criar conta · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topo">
+      <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+      <div class="marca">
+        <div class="marca__icone">◎</div>
+        <span class="marca__nome">Viajaí</span>
+      </div>
+    </header>
+
+    <div class="conteudo conteudo--sem-nav">
+      <!-- ============ ETAPA 1: dados da conta ============ -->
+      <section id="etapa-dados">
+        <h2>Criar sua conta</h2>
+        <p class="texto-apoio">Leva menos de um minuto. Depois é só escolher o que você gosta.</p>
+        <div class="passos">
+          <span class="ativo"></span><span></span><span></span>
+        </div>
+        <p class="texto-mini">Passo 1 de 3</p>
+
+        <div class="alerta" id="alerta-dados"></div>
+
+        <form id="form-dados" novalidate style="margin-top: 18px">
+          <div class="campo" id="campo-nome">
+            <label for="nome">Nome completo</label>
+            <div class="campo__caixa">
+              <input id="nome" name="nome" type="text" placeholder="Ana Lima" autocomplete="name" />
+              <span class="campo__estado"></span>
+            </div>
+            <span class="campo__mensagem"></span>
+          </div>
+
+          <div class="campo" id="campo-email">
+            <label for="email">E-mail</label>
+            <div class="campo__caixa">
+              <input id="email" name="email" type="email" placeholder="ana@email.com" autocomplete="email" />
+              <span class="campo__estado"></span>
+            </div>
+            <span class="campo__mensagem"></span>
+          </div>
+
+          <div class="campo" id="campo-senha">
+            <label for="senha">Senha</label>
+            <div class="campo__caixa">
+              <input id="senha" name="senha" type="password" placeholder="Mínimo de 6 caracteres" autocomplete="new-password" />
+              <button class="campo__acao" type="button" id="ver-senha" aria-label="Mostrar senha">👁</button>
+            </div>
+            <div class="forca" id="forca"><span></span><span></span><span></span></div>
+            <span class="campo__mensagem"></span>
+            <ul class="regras" id="regras">
+              <li data-regra="tamanho">Pelo menos 6 caracteres</li>
+              <li data-regra="numero">Um número (recomendado)</li>
+              <li data-regra="maiuscula">Uma letra maiúscula (recomendado)</li>
+            </ul>
+          </div>
+
+          <div class="campo" id="campo-confirmacao">
+            <label for="confirmacao">Confirmar senha</label>
+            <div class="campo__caixa">
+              <input id="confirmacao" name="confirmacao" type="password" placeholder="Repita a senha" autocomplete="new-password" />
+              <span class="campo__estado"></span>
+            </div>
+            <span class="campo__mensagem"></span>
+          </div>
+
+          <button class="botao botao--primario" type="submit" id="botao-cadastrar">Criar conta</button>
+          <p class="texto-apoio" style="text-align:center;margin-top:16px">
+            Já tem cadastro? <a href="login.html">Entrar</a>
+          </p>
+        </form>
+      </section>
+
+      <!-- ============ ETAPA 2: código de verificação ============ -->
+      <section id="etapa-codigo" hidden>
+        <h2>Confirme seu e-mail</h2>
+        <p class="texto-apoio">
+          Enviamos um código de 6 dígitos para <strong id="email-destino"></strong>.
+        </p>
+        <div class="passos">
+          <span class="ativo"></span><span class="ativo"></span><span></span>
+        </div>
+        <p class="texto-mini">Passo 1 de 3 · verificação</p>
+
+        <div class="alerta" id="alerta-codigo"></div>
+
+        <form id="form-codigo" novalidate style="margin-top: 18px">
+          <div class="campo" id="campo-codigo">
+            <label>Código de verificação</label>
+            <div class="codigo" id="codigo">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 1" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 2" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 3" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 4" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 5" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="dígito 6" />
+            </div>
+            <span class="campo__mensagem"></span>
+          </div>
+
+          <button class="botao botao--primario" type="submit" id="botao-verificar">Verificar código</button>
+          <button class="botao botao--texto" type="button" id="botao-reenviar">Reenviar código</button>
+          <button class="botao botao--texto" type="button" id="botao-corrigir-email">Usar outro e-mail</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/validacoes.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

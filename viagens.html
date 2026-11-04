@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Minhas viagens · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="pagina-topo">
+      <h1>Minhas viagens</h1>
+      <div class="pagina-topo__acoes">
+        <button type="button" class="botao botao--primario botao--pequeno" id="nova-viagem">＋ Nova viagem</button>
+      </div>
+    </header>
+
+    <div id="convites"></div>
+
+    <div class="abas" role="tablist" aria-label="Filtrar viagens">
+      <button class="aba" role="tab" data-status="" aria-selected="true">Todas</button>
+      <button class="aba" role="tab" data-status="em_andamento" aria-selected="false">Em andamento <span class="contador" hidden></span></button>
+      <button class="aba" role="tab" data-status="futura" aria-selected="false">Futuras <span class="contador" hidden></span></button>
+      <button class="aba" role="tab" data-status="concluida" aria-selected="false">Concluídas <span class="contador" hidden></span></button>
+    </div>
+
+    <div class="conteudo">
+      <div id="lista-viagens" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/formulario-viagem.js"></script>
+  <script src="js/viagens.js"></script>
+</body>
+</html>

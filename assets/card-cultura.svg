@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480">
+  <defs>
+    <linearGradient id="ceuC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b2a63"/><stop offset=".55" stop-color="#8b5da8"/><stop offset="1" stop-color="#f0b28a"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#ceuC)"/>
+  <circle cx="150" cy="120" r="44" fill="#ffe3b8" opacity=".85"/>
+  <g fill="#2a1c40" opacity=".35">
+    <path d="M0 330h720v150H0z"/>
+  </g>
+  <g fill="#f6ecdd">
+    <!-- torre esquerda -->
+    <rect x="118" y="196" width="86" height="180" rx="6"/>
+    <path d="M118 196l43-52 43 52z"/>
+    <rect x="146" y="240" width="30" height="46" rx="15" fill="#6b4a86"/>
+    <!-- corpo central -->
+    <rect x="216" y="224" width="288" height="152" rx="8"/>
+    <path d="M216 224l144-70 144 70z"/>
+    <rect x="248" y="272" width="52" height="104" rx="26" fill="#6b4a86"/>
+    <rect x="334" y="262" width="52" height="114" rx="26" fill="#6b4a86"/>
+    <rect x="420" y="272" width="52" height="104" rx="26" fill="#6b4a86"/>
+    <!-- torre direita -->
+    <rect x="516" y="196" width="86" height="180" rx="6"/>
+    <path d="M516 196l43-52 43 52z"/>
+    <rect x="544" y="240" width="30" height="46" rx="15" fill="#6b4a86"/>
+  </g>
+  <rect x="352" y="120" width="16" height="46" rx="8" fill="#f6ecdd"/>
+  <rect x="330" y="136" width="60" height="14" rx="7" fill="#f6ecdd"/>
+  <path d="M0 376h720v104H0z" fill="#c9a07e"/>
+  <g stroke="#a87f5f" stroke-width="4" opacity=".8">
+    <path d="M0 410h720M0 444h720M120 376v104M300 376v104M480 376v104M640 376v104"/>
+  </g>
+</svg>

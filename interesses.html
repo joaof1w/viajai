@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Seus interesses · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topo">
+      <div class="marca">
+        <div class="marca__icone">◎</div>
+        <span class="marca__nome">Viajaí</span>
+      </div>
+    </header>
+
+    <div class="conteudo conteudo--sem-nav">
+      <h2>Seus interesses</h2>
+      <p class="texto-apoio">Selecione o que você mais gosta. Quanto mais escolher, melhores as recomendações.</p>
+      <div class="passos">
+        <span class="ativo"></span><span class="ativo"></span><span></span>
+      </div>
+      <p class="texto-mini">Passo 2 de 3</p>
+
+      <div class="alerta" id="alerta" style="margin-top:16px"></div>
+
+      <div class="grade-interesses" id="grade-interesses"></div>
+
+      <div class="bloco">
+        <h3>Orçamento por viagem</h3>
+        <p class="texto-apoio">Selecione sua faixa de gastos preferida.</p>
+        <div class="orcamento" id="orcamento"></div>
+        <p class="texto-mini" id="descricao-orcamento" style="text-align:center"></p>
+      </div>
+
+      <div class="bloco">
+        <h3>Sua localização</h3>
+        <p class="texto-apoio">Usamos para calcular a distância até cada destino.</p>
+        <select class="selecao" id="cidade" style="margin-top:12px"></select>
+      </div>
+    </div>
+
+    <div class="rodape-fixo">
+      <button class="botao botao--primario" id="botao-salvar" type="button">
+        Ver minhas recomendações →
+      </button>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/interesses.js"></script>
+</body>
+</html>

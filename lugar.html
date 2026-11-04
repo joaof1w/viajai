@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lugar · Viajaí</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app app--amplo">
+    <div class="galeria" id="galeria">
+      <div class="galeria__topo">
+        <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+        <button class="topo__voltar" type="button" id="botao-favorito" aria-label="Salvar lugar" aria-pressed="false">♡</button>
+      </div>
+      <div class="galeria__principal esqueleto" style="border-radius:0 0 26px 26px"></div>
+    </div>
+
+    <div class="conteudo" id="conteudo">
+      <div class="carregando"><div class="esqueleto"></div><div class="esqueleto"></div></div>
+    </div>
+  </main>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/lugar.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Comparar destinos · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app app--amplo">
+    <header class="pagina-topo">
+      <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+      <h1>Comparar destinos</h1>
+    </header>
+    <div class="conteudo">
+      <div class="bloco">
+        <h3>Escolha de 2 a 3 destinos</h3>
+        <p class="texto-apoio" style="font-size:13.5px;margin-bottom:10px">Selecione no catálogo do Viajaí.</p>
+        <div class="escolha-destinos" id="escolhidos" aria-live="polite"></div>
+        <label class="busca__caixa" style="margin-bottom:10px">
+          <span aria-hidden="true">🔍</span>
+          <input id="filtro" type="search" placeholder="Filtrar por nome, cidade ou categoria" aria-label="Filtrar destinos" />
+        </label>
+        <div class="lista-escolha" id="lista" role="list"></div>
+      </div>
+      <div id="resultado"></div>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/comparar.js"></script>
+</body>
+</html>

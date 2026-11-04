@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Entrar · Viajaí</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topo">
+      <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+      <div class="marca">
+        <div class="marca__icone">◎</div>
+        <span class="marca__nome">Viajaí</span>
+      </div>
+    </header>
+
+    <div class="conteudo conteudo--sem-nav">
+      <h2>Bem-vindo de volta 👋</h2>
+      <p class="texto-apoio">Entre para ver as recomendações feitas para você.</p>
+
+      <div class="alerta" id="alerta"></div>
+
+      <form id="form-login" novalidate style="margin-top: 24px">
+        <div class="campo" id="campo-email">
+          <label for="email">E-mail</label>
+          <div class="campo__caixa">
+            <input id="email" type="email" placeholder="ana@email.com" autocomplete="email" />
+            <span class="campo__estado"></span>
+          </div>
+          <span class="campo__mensagem"></span>
+        </div>
+
+        <div class="campo" id="campo-senha">
+          <label for="senha">Senha</label>
+          <div class="campo__caixa">
+            <input id="senha" type="password" placeholder="Sua senha" autocomplete="current-password" />
+            <button class="campo__acao" type="button" id="ver-senha" aria-label="Mostrar senha">👁</button>
+          </div>
+          <span class="campo__mensagem"></span>
+        </div>
+
+        <button class="botao botao--primario" type="submit" id="botao-entrar">Entrar</button>
+        <p class="texto-apoio" style="text-align:center;margin-top:18px">
+          Ainda não tem conta? <a href="cadastro.html">Criar agora</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/validacoes.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

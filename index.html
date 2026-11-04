@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d1f2a" />
+  <meta name="description" content="Viajaí: descubra destinos, planeje roteiros com IA, organize gastos e registre suas viagens." />
+  <title>Viajaí · Descubra o mundo do seu jeito</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app app--inicial">
+    <section class="boas-vindas">
+      <!-- Fotografia real de viagem (carregada do acervo verificado). Enquanto carrega
+           — ou se não houver foto —, o fundo de reserva (ilustração + gradiente) aparece. -->
+      <div class="boas-vindas__fundo" id="fundo" aria-hidden="true"></div>
+
+      <header class="marca">
+        <div class="marca__icone">◎</div>
+        <span class="marca__nome">Viajaí</span>
+      </header>
+
+      <div class="boas-vindas__conteudo">
+        <div class="aviso" id="aviso">
+          <span>Altere seu idioma a qualquer momento no menu de ajuda</span>
+          <button type="button" aria-label="Fechar aviso" id="fechar-aviso">✕</button>
+        </div>
+
+        <p class="boas-vindas__local" id="local-foto" hidden></p>
+
+        <div class="chips-flutuantes">
+          <span class="chip-vidro">🏖️ Praias</span>
+          <span class="chip-vidro">🍽️ Gastronomia</span>
+          <span class="chip-vidro">🏔️ Aventura</span>
+        </div>
+
+        <h1>Descubra o mundo<br />do seu jeito</h1>
+        <p class="texto-apoio">
+          Recomendações personalizadas para destinos, restaurantes e experiências que combinam com você.
+        </p>
+
+        <a class="botao botao--primario" href="tour.html">Ver como funciona ✈️</a>
+        <p class="texto-apoio" style="font-size:12.5px;margin-top:14px">Versão de demonstração (somente telas).</p>
+      </div>
+
+      <p class="credito-fundo" id="credito-fundo" hidden></p>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

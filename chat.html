@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Vai · Assistente de viagem</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="chat">
+      <header class="chat__topo">
+        <button class="topo__voltar" type="button" id="botao-voltar" aria-label="Voltar">←</button>
+        <div class="chat__avatar">🧳</div>
+        <div>
+          <h3>Vai</h3>
+          <span class="chat__status">Assistente de viagem · online</span>
+        </div>
+        <span class="selo-ia" id="selo-ia">IA</span>
+      </header>
+
+      <div class="chat__ferramentas">
+        <label class="visualmente-oculto" for="foco-viagem">Conversar sobre</label>
+        <select id="foco-viagem">
+          <option value="">💬 Conversa geral</option>
+        </select>
+        <button type="button" class="icone-botao" id="botao-permissoes" title="O que o Vai pode consultar"
+                aria-label="Permissões do Vai">🔒</button>
+      </div>
+
+      <div class="chat__corpo" id="mensagens">
+        <p class="chat__dia" id="dia">Hoje</p>
+      </div>
+
+      <div class="sugestoes" id="sugestoes"></div>
+
+      <form class="chat__envio" id="form-chat">
+        <input id="entrada" type="text" placeholder="Pergunte sobre sua viagem..." autocomplete="off" />
+        <button type="submit" id="botao-enviar" aria-label="Enviar">➤</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
