@@ -867,3 +867,10 @@ img { max-width: 100%; }
 @media (min-width: 1100px) {
   .boas-vindas__conteudo { max-width: 600px; }
 }
+
+/* Aviso da versão de demonstração (sem backend) */
+.demo-aviso { display: flex; align-items: center; gap: 8px; background: #fff6e5; color: #8a4b08; border-bottom: 1px solid #f3dcb0;
+  font-size: 12px; line-height: 1.35; padding: 8px 12px; position: relative; z-index: 30; }
+.demo-aviso span { flex: 1; }
+.demo-aviso button { background: none; border: 1px solid #e6c98f; color: #8a4b08; border-radius: 8px; padding: 4px 8px; font: 700 11px var(--fonte); cursor: pointer; }
+.boas-vindas .demo-aviso, .app > .demo-aviso { width: 100%; }
